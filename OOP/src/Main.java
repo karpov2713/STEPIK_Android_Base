@@ -1,24 +1,22 @@
 public class Main {
 
     public static void main(String[] args) {
-//        Box box1 = new Box();
-//        box1.height = 10;
-//        box1.length = 10;
-//        box1.width = 10;
-//
-//        Box box2 = new Box();
-//        box2.height = 20;
-//        box2.length = 20;
-//        box2.width = 20;
-//
-//        Box box3 = box2; //  Это не новый объект, а ссылка на уже существующий box2
-//        box3.width = 0;
-//
-//        double volume = box1.height * box1.length * box1.width;
-//        System.out.println(volume);
-//        double volume2 = box2.height * box2.length * box2.width;
-//        System.out.println(volume2);
 
+        // КОРОБКИ
+        Box box1 = new Box();
+        box1.height = 10;
+        box1.length = 10;
+        box1.width = 10;
+
+        Box box2 = new Box();
+        box2.height = 20;
+        box2.length = 20;
+        box2.width = 20;
+
+        box1.showVolume();
+        box2.showVolume();
+
+        // ЛЮДИ
         Person john = new Person();
         john.name = "John";
         john.age = 27;
@@ -39,6 +37,13 @@ public class Main {
         System.out.println(average);
 
 
+        // СОБАКИ
+        Dog dog1 = new Dog();
+        dog1.name = "Тузик";
+        dog1.breed = "Такса";
+        dog1.weight = 3;
+        dog1.speed = 5;
+        System.out.println(dog1.getInfo());
+        dog1.run();
     }
-
 }
