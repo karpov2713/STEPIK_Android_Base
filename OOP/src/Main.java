@@ -1,18 +1,21 @@
 public class Main {
 
     public static void main(String[] args) {
+
+        // СОТРУДНИКИ
+        Worker worker = new Worker("John", "Director", 100_000);
+        worker.showInfo();
+
         // ПРЯМОУГОЛЬНИК
-        Rectangle rect = new Rectangle();
-        rect.setDimens(10, 5);
-        System.out.println(rect.getArea());
+//        Rectangle rect = new Rectangle();
+//        rect.setDimens(10, 5);
+//        System.out.println(rect.getArea());
 
         // КОРОБКИ
-//        Box box1 = new Box();
-//        box1.setDimens(10, 10, 10);
-//
-//        Box box2 = new Box();
-//        box2.setDimens(20, 20, 20);
-//
+//        Box box1 = new Box(); // Использование конструктора
+//        //box1.setDimens(10, 10, 10);
+//        Box box2 = new Box(20, 20, 20); // Использование конструктора
+//        //box2.setDimens(20, 20, 20);
 //        box1.showVolume();
 //        box2.showVolume();
 
