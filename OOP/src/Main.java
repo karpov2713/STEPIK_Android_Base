@@ -1,10 +1,20 @@
 public class Main {
 
     public static void main(String[] args) {
+        // MONSTER
+        Monster monster = new Monster(5);
+        monster.voice(3, "A-a-a-a-a-a-a-a-a-a-a-a-a");
+
+        // MATH
+//        System.out.println(MyMath.multiple(10, 5));
+//        System.out.println(MyMath.multiple(10.8, 5.2)); // Перегрузка метода multiple
+//        System.out.println(MyMath.multiple(25)); // Используются статические методы класса, ему не нужны экземпляры
+//
+//        System.out.println(Math.sqrt(225)); // Встроенный Класс Math
 
         // СОТРУДНИКИ
-        Worker worker = new Worker("John", "Director", 100_000);
-        worker.showInfo();
+//        Worker worker = new Worker("John", "Director", 100_000);
+//        worker.showInfo();
 
         // ПРЯМОУГОЛЬНИК
 //        Rectangle rect = new Rectangle();
@@ -12,10 +22,12 @@ public class Main {
 //        System.out.println(rect.getArea());
 
         // КОРОБКИ
+//        Box box = new Box(30);
 //        Box box1 = new Box(); // Использование конструктора
 //        //box1.setDimens(10, 10, 10);
 //        Box box2 = new Box(20, 20, 20); // Использование конструктора
 //        //box2.setDimens(20, 20, 20);
+//        box.showVolume();
 //        box1.showVolume();
 //        box2.showVolume();
 
