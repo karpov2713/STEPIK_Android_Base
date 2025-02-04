@@ -22,21 +22,21 @@ public class Main {
 //        System.out.println(rect.getArea());
 
         // КОРОБКИ
-        Box box = new Box(30);
-        Box box1 = new Box(); // Использование конструктора
-        //box1.setDimens(10, 10, 10);
-        Box box2 = new Box(20, 20, 20); // Использование конструктора
-        //box2.setDimens(20, 20, 20);
-        box.showVolume();
-        box1.showVolume();
-        box2.showVolume();
-
-        Box currentBox = new Box(10);
-        Box anotherBox = new Box(currentBox);
-        anotherBox.setDimens(20, 20, 20);
-        System.out.println(currentBox.compare(anotherBox));
-        currentBox.showVolume();
-        anotherBox.showVolume();
+//        Box box = new Box(30);
+//        Box box1 = new Box(); // Использование конструктора
+//        //box1.setDimens(10, 10, 10);
+//        Box box2 = new Box(20, 20, 20); // Использование конструктора
+//        //box2.setDimens(20, 20, 20);
+//        box.showVolume();
+//        box1.showVolume();
+//        box2.showVolume();
+//
+//        Box currentBox = new Box(10);
+//        Box anotherBox = new Box(currentBox);
+//        anotherBox.setDimens(20, 20, 20);
+//        System.out.println(currentBox.compare(anotherBox));
+//        currentBox.showVolume();
+//        anotherBox.showVolume();
 
         // ЛЮДИ
 //        Person john = new Person();
