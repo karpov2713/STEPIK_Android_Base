@@ -3,8 +3,12 @@ public class Box {
     double width;
     double height;
 
-    Box(){
+    Box() {
         this(10);
+    }
+
+    Box(Box another){
+        this(another.length, another.width, another.height);
     }
 
     Box(double length, double width, double height) {
@@ -13,7 +17,7 @@ public class Box {
         this.height = height;
     }
 
-    Box(int size){
+    Box(int size) {
         this(size, size, size);
     }
 
@@ -21,6 +25,18 @@ public class Box {
         this.length = length;
         this.width = width;
         this.height = height;
+    }
+
+    int compare(Box another) {
+        double currentVolume = getVolume();
+        double anotherVolume = another.getVolume();
+        if (currentVolume > anotherVolume) {
+            return 1;
+        } else if (currentVolume < anotherVolume) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 
     double getVolume() {
@@ -31,6 +47,4 @@ public class Box {
         // double volume = length * width * height;
         System.out.println(getVolume());
     }
-
-
 }
