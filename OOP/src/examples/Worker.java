@@ -1,3 +1,5 @@
+package examples;
+
 public class Worker {
     String name;
     String position;

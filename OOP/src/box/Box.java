@@ -1,23 +1,25 @@
-public class Box {
-    double length;
-    double width;
-    double height;
+package box;
 
-    Box() {
+public class Box {
+    private double length;
+    private double width;
+    private double height;
+
+    public Box() {
         this(10);
     }
 
-    Box(Box another){
+    public Box(Box another){
         this(another.length, another.width, another.height);
     }
 
-    Box(double length, double width, double height) {
+    public Box(double length, double width, double height) {
         this.length = length;
         this.width = width;
         this.height = height;
     }
 
-    Box(int size) {
+    public Box(int size) {
         this(size, size, size);
     }
 
@@ -27,7 +29,7 @@ public class Box {
         this.height = height;
     }
 
-    int compare(Box another) {
+    public int compare(Box another) {
         double currentVolume = getVolume();
         double anotherVolume = another.getVolume();
         if (currentVolume > anotherVolume) {
@@ -39,7 +41,7 @@ public class Box {
         }
     }
 
-    double getVolume() {
+    private double getVolume() {
         return length * width * height;
     }
 

@@ -1,3 +1,5 @@
+package box;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -70,5 +72,10 @@ public class Main {
 //        Test test = new Test();
 //        System.out.println(test.square(20));
 
+//        Person person = new Person("Jonh", 25);
+//        person.setAge(-40);
+//        System.out.println("Name: " + person.getName() + ", Age: " + person.getAge());
+
+        Box box = new Box(5 );
     }
 }
