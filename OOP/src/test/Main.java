@@ -88,7 +88,23 @@ public class Main {
 
 //        System.out.println(MyMath.sum(1, 2, 3, 4, 5, 122));
 
-        
+        MyArrayList employees = getEmployees();
+        employees.add("James");
+        employees.remove("Emma");
+        // Выводим массив в консоль поэлементно
+        for (int i = 0; i < employees.getSize(); i++) {
+            System.out.println(employees.get(i));
+        }
 
+    }
+
+    private static MyArrayList getEmployees() {
+        MyArrayList employees = new MyArrayList();
+        employees.add("John");
+        employees.add("Olivia");
+        employees.add("Emma");
+        employees.add("Max");
+        employees.add("Nick");
+        return employees;
     }
 }
