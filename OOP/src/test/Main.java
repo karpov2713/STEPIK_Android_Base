@@ -1,6 +1,7 @@
 package test;
 
 import box.Box;
+import examples.MyMath;
 import examples.Person;
 
 public class Main {
@@ -79,6 +80,15 @@ public class Main {
 //        person.setAge(-40);
 //        System.out.println("Name: " + person.getName() + ", Age: " + person.getAge());
 
-        Box box = new Box(5 ); // Класс находится в другом пакете.
+        // Box box = new Box(5 ); // Класс находится в другом пакете.
+
+//        System.out.println(MyMath.length(10));
+//        System.out.println(MyMath.area(10));
+//        System.out.println(MyMath.length(10));
+
+//        System.out.println(MyMath.sum(1, 2, 3, 4, 5, 122));
+
+        
+
     }
 }
